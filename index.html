@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="#" method="post">
+      <!--Campo nome -->
+      <div>
+        <label for="nome">Nome:</label><br />
+        <input type="text" name="Nome" id="nome" required />
+      </div>
+      <br />
+
+      <!--Campo e-mail-->
+      <div>
+        <label for="email">E-mail:</label><br />
+        <input type="email" name="e-mail" id="email" required />
+      </div>
+      <br />
+
+      <!--Campo whatsapp-->
+      <div>
+        <label for="whatsapp">Whatsapp:</label><br />
+        <input type="number" name="whatsapp-" id="whatsapp" required />
+      </div>
+      <br />
+
+      <!--Área de atuação-->
+      <div>
+        <label> Área de atuação:</label><br />
+
+        <!--Desenvolvimento-->
+        <input
+          type="radio"
+          id="desenvolvimento"
+          name="Desenvolvimento"
+          value="desenvolvimento"
+          required
+        />
+        <label for="desenvolvimento">Desenvolvimento</label>
+
+        <!--Quality Assurance-->
+        <input
+          type="radio"
+          id="qualityAssurance"
+          name="quality"
+          value="qualityAssurance"
+          required
+        />
+        <label for="qualityAssurance">Quality Assurance (QA)</label>
+
+        <!--Analise de dados-->
+        <input
+          type="radio"
+          id="analiseDeDados"
+          name="AnaliseDados"
+          value="analiseDeDados"
+          required
+        />
+        <label for="analiseDeDados">Análise de Dados</label>
+
+        <!--Infraestrutura-->
+        <input
+          type="radio"
+          id="--infraestrutura--"
+          name="infraestrutura-"
+          value="infraestrutura"
+          required
+        />
+        <label for="infraestrutura">Infraestrutura</label>
+      </div>
+      <br />
+
+      <!--Campo Observações-->
+      <div>
+        <label for="observacoes">Observações:</label><br />
+        <textarea name="observacoes" id="observacoes" cols="20"></textarea>
+      </div>
+      <br />
+
+      <input
+        type="checkbox"
+        id="ofertas"
+        name="ofertas-e-mail"
+        value="ofertas"
+      />
+
+      <!--Campo Ofertas no email-->
+      <label for="ofertas">
+        Desejo receber novidades e ofertas por email. </label
+      ><br />
+
+      <!--Botão Enviar-->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
